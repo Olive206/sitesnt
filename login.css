@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    html{
+    scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*nav barre*/
+header{
+  
+  height: 12vh;
+}
+
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid #6f6f6f;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  z-index:2;
+}
+
+
+
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight:bold;
+    margin-left: 40px;
+}
+
+nav h1 a{
+    text-decoration: none;
+    color: #717171;
+}
+
+nav ul {
+  padding: 0;
+  text-align: ;
+  margin:0;
+}
+nav ul li{
+  display: inline-block;
+  padding: 10px;  
+  position: relative;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: block;
+  
+}
+nav ul li a:hover{
+  color: #717171; 
+}
+
+.sub{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+}
+.sub li{
+  display: block;
+  margin-left: 15;
+  margin-right: 15;
+  
+  
+}
+.onglets .sub a{
+  border-bottom: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+header li:hover .sub{
+  display: block;
+}
+
+nav .onglets{
+    margin-top: 3px;
+    margin-right: 40px;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0px;
+}
+
+nav .onglets{
+  display: flex;
+  flex-wrap:wrap;
+}
+.noicons p a{
+  font-size: 23px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: none;
+  
+}
+
+/*fin nav barre*/
+            
+
+
+section{
+  display: flex ;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+
+}
+
+form {
+  background-color: #fff;
+  padding: 20px 60px;
+  border-radius: 40px;
+  min-width: 500px;
+  margin-top: 20px;
+  min-height: 500px;
+  margin-top: px;
+}
+form h1{
+  color: #717171;
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+
+form .inputs {
+  display: flex;
+  flex-direction: column;
+}
+form .inputs input[type='email'], input[type='password'], input[type='text']{
+  padding: 15px;
+  border:none;
+  border-radius: 5px;
+  background-color:#f2f2f2;
+  outline:none;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+form p.inscription{
+  margin-top: 40px;
+  font-size: 17px;
+  padding-bottom: 0px;
+  color: #000;
+}
+
+form p.inscription span a{
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form p.inscription span a:hover{
+  color: #717171;
+  
+}
+
+form button{
+  padding: 15px 25px;
+  border:none;
+  font-size: 15px;
+  outline:none;
+  cursor:pointer;
+  display:inline-block;
+  background: #fff;
+  color:#000;
+  border-radius: 30px;
+  transition: background 0.2s;
+  border: 1px black solid;
+  text-decoration: none;
+  margin-top: 20px;
+
+}
+
+form button:hover{
+  background: #000;
+  color: #fff;
+}
+
+/* début panier*/
+
+
+
+.content-wrapper {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.cart h1 { 
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  font-weight: normal;
+  margin: 0;
+  padding: 40px 0;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+.cart table {
+  margin-top: 40px;
+  width: 100%;
+}
+.cart table thead td {
+  padding: 30px 0;
+  border-bottom: 1px solid #EEEEEE;
+  font-size: 20px;
+}
+.cart table thead td:last-child {
+  text-align: right;
+}
+.cart table tbody td {
+  padding: 60px 0;
+  border-bottom: 1px solid #EEEEEE;
+  font-size: 20px;
+}
+
+
+
+.cart table .price {
+  color: #999999;
+}
+
+
+.cart .subtotal {
+  text-align: right;
+  padding: 40px 0;
+}
+
+.cart .subtotal .text {
+  padding-right: 40px;
+  font-size: 18px;
+}
+
+.cart .subtotal .price {
+  font-size: 18px;
+  color: #999999;
+}
+.cart .buttons {
+  text-align: right;
+  padding-bottom: 40px;
+}
+
+.cart .buttons input[type="submit"] {
+  margin-left: 5px;
+  padding: 12px 20px;
+  background: #4e5c70;
+
+}
+
+.btn {
+  display:inline-block;
+  background: #fff;
+  color:#000;
+  padding: 8px 30px;
+  margin: 15px 0;
+  border-radius: 30px;
+    transition: background 0.2s;
+    border: 1px black solid;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn:hover{
+  background: #000;
+  color: #fff;
+}
+
+
+
+
+
+
+/* Pied de page */
+footer {
+  margin-top: 70px;
+  background-color: #000;
+  padding:20px;
+  color: #fff;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+footer p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+footer .social-media{
+  display: flex;
+  
+}
+footer .social-media p{
+  margin-right: 15px;
+  text-align:center;
+  width: 40px;
+  cursor:pointer;
+  font-size: 30px
+}
+/* Fin du pied de page */
+
+        </style> 

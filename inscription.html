@@ -1,0 +1,88 @@
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="NoS1gnal"/>
+            <title>inscription</title>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+            <link rel="stylesheet" href="login.css">
+            
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+            
+        </head>
+
+
+        <body>
+
+<header>
+    <nav>
+  <h1><a href="site.html">Hydrogen</a></h1>
+    <div class="onglets">
+    <ul>
+            <li><a href="site.html">Home</a></li>
+            <li><a href="all_products.html">Nos produits</a>
+        <div class="sub">
+        <ul>
+          <li><a href="sweats_page.html">Hoodies</a></li>
+          <li><a href="tshirts_page.html">T-shirts</a></li>
+          <li><a href="pantalons_page.html">Pantalons</a></li>
+          <li><a href="accessoires_page.html">Accessoires</a></li>
+        </ul>
+        </div>
+      </li>
+            <li><a href="#contact">Contact</a></li>
+            <span class="noicons">
+            <li><p class="account"><a href="login.html"><i class="fas fa-user navbar-icon"></i></a></p></li>
+            <li><p class="cart"><a href="panier.html"><i class="fas fa-shopping-cart"></i></a></p></li></span>
+    </ul>
+        </div>
+
+    </nav>
+</header>
+
+<section>  
+        
+
+   
+ <form action="inscription_traitement.php" method="post">
+     
+    <h1 class="text-center">Créer un compte</h1>
+
+    
+    <div class="inputs form-group">
+      <input type="text"  name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off" requiredminlength="5" maxlength="12" />
+      <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off" requiredminlength="5" maxlength="40" >
+      <input type="password"  name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off" requiredminlength="5" maxlength="20" />
+      <input type="password" name="password_retype" class="form-control" placeholder="Re-tapez le mot de passe" required="required" autocomplete="off" requiredminlength="5" maxlength="20" >
+    </div>
+    <div align="center" class="button">
+      <button type="submit">S'enregistrer</button>
+    </div>
+    <p class="inscription">Cliquer ici pour <span><a href="login.html"> se connecter</a></span></p>
+    
+  </form>
+
+    
+</section>
+
+    <!-- Pied de page -->
+  <footer>
+    <p>&copy; Contactez-nous au 06 98 87 82 00</p>
+    <div class="social-media">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+      <p><i class="fab fa-instagram"></i></p>
+      <p><i class="fab fa-linkedin-in"></i></p>
+    </div>
+  </footer>
+  <!-- Fin du pied de page -->
+
+
+
+
+
+        </body>
+</html>
+
+
+

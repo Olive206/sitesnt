@@ -1,0 +1,144 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Human market</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+
+  <link rel="stylesheet" href="detail_produit.css">
+</head>
+<body>
+<header>
+    <nav>
+  <h1><a href="site.html">Hydrogen</a></h1>
+    <div class="onglets">
+    <ul>
+            <li><a href="site.html">Home</a></li>
+            <li><a href="all_products.html">Nos produits</a>
+        <div class="sub">
+        <ul>
+          <li><a href="sweats_page.html">Hoodies</a></li>
+          <li><a href="tshirts_page.html">T-shirts</a></li>
+          <li><a href="pantalons_page.html">Pantalons</a></li>
+          <li><a href="accessoires_page.html">Accessoires</a></li>
+        </ul>
+        </div>
+      </li>
+            <li><a href="site.html#contact">Contact</a></li>
+            <span class="noicons">
+            <li><p class="account"><a href="login.html"><i class="fas fa-user navbar-icon"></i></a></p></li>
+            <li><p class="cart"><a href="panier.html"><i class="fas fa-shopping-cart"></i></a></p></li></span>
+    </ul>
+        </div>
+
+    </nav>
+</header>
+
+<div class="path"><p>Home / Nos produits / Pantalons / Armure de jambe médiévale</p></div>
+
+<div class="small-container single-product">
+  <div class="row">
+    <div class="col-2">
+      <img src="https://m.media-amazon.com/images/I/61UqfSeJ1pL._AC_UY445_.jpg" alt="" width="70%" id="product-img">
+
+      <div class="small-img-row">
+        <div class="small-img-col">
+          <img src="https://m.media-amazon.com/images/I/61UqfSeJ1pL._AC_UY445_.jpg" alt="" width="100%" id="small-img1">
+        </div>
+
+        <div class="small-img-col">
+          <img src="https://i.etsystatic.com/21866880/r/il/2c338a/2674349227/il_794xN.2674349227_d6i0.jpg" alt="" width="100%" id="small-img2">
+        </div>
+
+        
+      </div>
+    </div>
+
+    <div class="col-2 description">
+      
+      <h1>Armure de jambe médiévale</h1>
+      <h4>279.99€</h4>
+      <select>
+        <option>Sélectionnez la taille</option>
+        <option>XXL</option>
+        <option>XL</option>
+        <option>L</option>
+        <option>M</option>
+        <option>S</option>
+        <option>XS</option>
+        <input type="number" value="1">
+        <a href="" class="btn">Add to cart</a>
+        <h3>Détails du produit</h3>
+        
+         <p class="text_product">très lourd<br>
+Véritable acier<br>
+Résiste à de vraies épées<br>
+Parfait pour partir en croisade</p>
+      </select>
+    </div>
+  </div>	
+</div>
+
+<!-- title -->
+
+<div class="small-container">
+  <div class="row"></div>
+
+
+</div>
+<!-- products -->
+
+
+
+
+ <!-- Pied de page -->
+  <footer>
+    <p>&copy; Contactez-nous au 06 98 87 82 00</p>
+    <div class="social-media">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+      <p><i class="fab fa-instagram"></i></p>
+      <p><i class="fab fa-linkedin-in"></i></p>
+    </div>
+  </footer>
+  <!-- Fin du pied de page -->
+
+
+<!-- script pour changer d'image -->
+
+
+<script type="text/javascript">
+
+  var ProductImg = document.getElementById("product-img")
+  var SmallImg1 = document.getElementById("small-img1")
+  var SmallImg2 = document.getElementById("small-img2")
+  var SmallImg3 = document.getElementById("small-img3")
+  var SmallImg4 = document.getElementById("small-img4")
+
+    SmallImg1.onclick = function()
+     {
+        ProductImg.src = SmallImg1.src;
+     }
+
+     SmallImg2.onclick = function()
+     {
+        ProductImg.src = SmallImg2.src;
+     }
+
+     SmallImg3.onclick = function()
+     {
+        ProductImg.src = SmallImg3.src;
+     }
+     SmallImg4.onclick = function()
+     {
+        ProductImg.src = SmallImg4.src;
+     }
+
+ 
+  </script>
+
+
+</body>
+</html>

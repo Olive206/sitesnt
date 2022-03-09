@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+	box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*nav barre*/
+header{
+  
+  height: 12vh;
+}
+
+nav{
+  display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  z-index:2;
+}
+
+{
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+  font-weight:bold;
+    margin-left: 40px;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #717171;
+}
+
+nav ul {
+  padding: 0;
+  text-align: ;
+  margin:0;
+}
+nav ul li{
+  display: inline-block;
+  padding: 10px;  
+  position: relative;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: block;
+  
+}
+nav ul li a:hover{
+  color: #717171; 
+}
+
+.sub{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+}
+.sub li{
+  display: block;
+  margin-left: 15;
+  margin-right: 15;
+  
+  
+}
+.onglets .sub a{
+  border-bottom: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+header li:hover .sub{
+  display: block;
+}
+
+nav .onglets{
+    margin-top: 3px;
+    margin-right: 40px;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0px;
+}
+
+nav .onglets{
+  display: flex;
+  flex-wrap:wrap;
+}
+.noicons p a{
+  font-size: 23px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: none;
+  
+}
+
+/*fin nav barre*/
+
+/*présentation de la page*/
+#presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+	background-color:black;
+    color: #fff;
+    padding: 40px;
+}
+#presentation h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+	margin-top: -10px;
+}
+#presentation h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+	font-style: italic;
+}
+
+
+/* Pages hoodies 
+
+/* Nav bar (le css de la nav bar est déjà au dessus*/
+
+/* Section principale */
+
+.main{
+  margin: 20px;
+  margin-top: 80px;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  
+}
+/* Toutes les cartes */
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom: 50px;
+  
+}
+.cards .card{
+  margin-right: 20px;
+  cursor:pointer;
+  transition: transform 0.5s;
+}
+
+.cards .card:hover{
+  transform: translateY(-5px);
+}
+.cards .card img{
+  width: 350px;
+  height: 400px;
+}
+.cards .card .card-header{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.cards .card .card-body p{
+  margin-top: -17px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card-header{
+  color: #000;
+}
+
+.card-body{
+  color: #717171;
+}
+
+
+/* Fin de toutes les cartes */
+
+
+/* Fin de la section principale */
+
+/* Pied de page */
+footer {
+  margin-top: 100px;
+  background-color: #000;
+  padding:20px;
+  color: #fff;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+footer p{
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+footer .social-media{
+  display: flex;
+  
+}
+footer .social-media p{
+  margin-right: 15px;
+  text-align:center;
+  width: 40px;
+  cursor:pointer;
+  font-size: 30px
+}
+/* Fin du pied de page */
