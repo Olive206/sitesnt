@@ -244,7 +244,7 @@ footer .services .service{
     margin-right: 30px;
 }
 footer .services .service p{
-    max-width: 275px;
+    width: 255px;
 }
 footer #contact{
     color: rgb(181, 181, 181);
